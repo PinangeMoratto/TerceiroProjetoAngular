@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class TesteDiretivasComponent {
 
+  ultimoId = 0;
+  nome = "";
+  listaPessoas: any = [];
+
+  adicionar() {
+    this.listaPessoas.push(
+      {
+        id: ++this.ultimoId,
+        nome: this.nome
+      }
+    );
+  }
+
+  constructor() { }
+
 }
