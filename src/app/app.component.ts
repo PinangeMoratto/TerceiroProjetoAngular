@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'terceiroprojeto';
+
+  mostrar: boolean = true;
+
+  inverter(){
+    this.mostrar = !this.mostrar;
+  }
+
 }
